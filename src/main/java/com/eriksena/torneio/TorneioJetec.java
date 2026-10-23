@@ -2,6 +2,7 @@ package com.eriksena.torneio;
 
 import com.eriksena.torneio.db.Conexao;
 import java.sql.Connection;
+import com.eriksena.torneio.model.Modalidade;
 
 public class TorneioJetec {
 
@@ -11,5 +12,8 @@ public class TorneioJetec {
         } catch (Exception e) {
             System.out.println("Erro ao conectar: " + e.getMessage());
         }
+        
+        Modalidade m1 = new Modalidade("PARADOXO", 5);
+        System.out.println(m1);
     }
 }
